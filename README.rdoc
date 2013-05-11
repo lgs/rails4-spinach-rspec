@@ -1,12 +1,46 @@
 == Rails4SpinachRspec
 
-This application can be used as a template to setup a new Rails 4 BDD/TDD test environment, with Spinach and RSpec frameworks (see Deployment instructions at the end of this page).
+This application can be used as a template to setup a new Rails 4 BDD/TDD test environment, with Spinach and RSpec frameworks.
 
-* Ruby version
+=== How to run the test suite
+
+  $ spinach
+
+    Feature: Test how spinach works
+
+      Scenario: Formal greeting
+        P  Given I have an empty array                             
+        P  And I append my first name and my last name to it       
+        P  When I pass it to my super-duper method                 
+        P  Then the output should contain a formal greeting        
+
+            Step 'the output should contain a formal greeting' pending
+            Reason: 'step not implemented'
+
+      Scenario: Informal greeting
+        P  Given I have an empty array                           
+        P  And I append only my first name to it                 
+        P  When I pass it to my super-duper method               
+        P  Then the output should contain a casual greeting      
+
+            Step 'the output should contain a casual greeting' pending
+            Reason: 'step not implemented'
+
+    Steps Summary: (0) Successful, (0) Undefined, (8) Pending, (0) Failed, (0) Error
+
+=== Deployment instructions
+
+Change the application name Rails4SpinachRspec in something more appropriate :
+
+  $ git clone git@github.com:lgs/rails4-spinach-rspec.git
+  $ cd rails4-spinach-rspec
+  $ find . -exec grep Rails4SpinachRspec {} \; -print | grep ^./ | xargs sed -i "s/Rails4SpinachRspec/YourAwesomeNewProjectName/g"
+
+=== PLATFORM 
 
   ruby 2.0.0p0 (2013-02-24 revision 39474) [i686-linux]
 
-* System dependencies
+=== DEPENDENCIES
 
   * coffee-rails (~> 4.0.0)
   * jbuilder (~> 1.0.1)
@@ -19,41 +53,4 @@ This application can be used as a template to setup a new Rails 4 BDD/TDD test e
   * sqlite3
   * turbolinks
   * uglifier (>= 1.3.0)
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-  $ spinach
-  Feature: Test how spinach works
-    Scenario: Formal greeting
-      P  Given I have an empty array                             
-      P  And I append my first name and my last name to it       
-      P  When I pass it to my super-duper method                 
-      P  Then the output should contain a formal greeting        
-
-          Step 'the output should contain a formal greeting' pending
-          Reason: 'step not implemented'
-
-    Scenario: Informal greeting
-      P  Given I have an empty array                           
-      P  And I append only my first name to it                 
-      P  When I pass it to my super-duper method               
-      P  Then the output should contain a casual greeting      
-
-          Step 'the output should contain a casual greeting' pending
-          Reason: 'step not implemented'
-  Steps Summary: (0) Successful, (0) Undefined, (8) Pending, (0) Failed, (0) Error
-
-* Deployment instructions
-
-Change the application name Rails4SpinachRspec in something more appropriate :
-
-  $ git clone git@github.com:lgs/rails4-spinach-rspec.git
-  $ cd rails4-spinach-rspec
-  $ find . -exec grep Rails4SpinachRspec {} \; -print | grep ^./ | xargs sed -i "s/Rails4SpinachRspec/YourAwesomeNewProjectName/g"
 
