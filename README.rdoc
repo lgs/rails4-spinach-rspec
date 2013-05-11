@@ -28,10 +28,8 @@ This application can be used as a template to setup a new Rails 4 BDD/TDD test e
 
 * How to run the test suite
 
-  lsoave@ubuntu:~/rails/github/rails4-spinach-rspec$ spinach
-
+  $ spinach
   Feature: Test how spinach works
-
     Scenario: Formal greeting
       P  Given I have an empty array                             
       P  And I append my first name and my last name to it       
@@ -49,21 +47,13 @@ This application can be used as a template to setup a new Rails 4 BDD/TDD test e
 
           Step 'the output should contain a casual greeting' pending
           Reason: 'step not implemented'
-
   Steps Summary: (0) Successful, (0) Undefined, (8) Pending, (0) Failed, (0) Error
-
-  lsoave@ubuntu:~/rails/github/rails4-spinach-rspec$ 
- 
-
-* Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
 
 Change the application name Rails4SpinachRspec in something more appropriate :
 
-  * >git clone git@github.com:lgs/rails4-spinach-rspec.git
-  * >cd rails4-spinach-rspec
-  * >find . -exec grep Rails4SpinachRspec {} \; -print | grep ^./ | xargs sed -i "s/Rails4SpinachRspec/YourAwesomeNewProjectName/g"
-
-* ...
+  $ git clone git@github.com:lgs/rails4-spinach-rspec.git
+  $ cd rails4-spinach-rspec
+  $ find . -exec grep Rails4SpinachRspec {} \; -print | grep ^./ | xargs sed -i "s/Rails4SpinachRspec/YourAwesomeNewProjectName/g"
 
