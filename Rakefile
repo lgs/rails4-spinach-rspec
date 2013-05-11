@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Prova::Application.load_tasks
+Rails4SpinachRspec::Application.load_tasks
