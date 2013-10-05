@@ -35,6 +35,9 @@ Change the application name Rails4SpinachRspec in something more appropriate :
   $ git clone git@github.com:lgs/rails4-spinach-rspec.git
   $ cd rails4-spinach-rspec
   $ find . -exec grep Rails4SpinachRspec {} \; -print | grep ^./ | xargs sed -i "s/Rails4SpinachRspec/YourAwesomeNewProjectName/g"
+  $ cd ..; mv rails4-spinach-rspec your-awesome-new-project-name; cd your-awesome-new-project-name; rm -rf .git
+  $ git init; git add .
+  $ git commit -am "first commit" 
 
 === PLATFORM 
 
