@@ -1,4 +1,6 @@
 == Rails4SpinachRspec
+{<img src="https://gemnasium.com/lgs/rails4-spinach-rspec.png" alt="Dependency Status" />}[https://gemnasium.com/lgs/rails4-spinach-rspec]
+{<img src="https://codeclimate.com/github/lgs/rails4-spinach-rspec.png" />}[https://codeclimate.com/github/lgs/rails4-spinach-rspec]
 
 This application can be used as a template to setup a new Rails 4 BDD/TDD test environment, with Spinach and RSpec frameworks.
 
