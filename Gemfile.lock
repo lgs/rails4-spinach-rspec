@@ -140,12 +140,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  coffee-rails (~> 4.0.0)
+  coffee-rails
   jbuilder
   jquery-rails
   rails (= 4.0.0)
   rspec-rails
-  sass-rails (~> 4.0.0)
+  sass-rails
   sdoc
   spinach-rails
   sqlite3
